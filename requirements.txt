@@ -1,21 +1,37 @@
+# Core NLP / HF stack
 transformers
-transformers[sentencepiece]
+sentencepiece
 datasets
-sacrebleu 
-rouge_score 
+evaluate
+
+# Metrics
+sacrebleu
+rouge_score
+
+# ML / DL backend (PyTorch only)
+torch
+
+# Utilities
 py7zr
 pandas
 nltk
 tqdm
 PyYAML
 matplotlib
-torch
 notebook
+
+# AWS
 boto3
 mypy-boto3-s3
-python-box==6.0.2
-ensure==1.0.2
-fastapi==0.78.0
-uvicorn==0.18.3
-Jinja2==3.1.2
-evaluate
+
+# Config handling
+python-box
+
+# API layer (Python 3.12 compatible)
+fastapi
+uvicorn
+Jinja2
+
+# Critical compatibility pins
+protobuf
+ml-dtypes
